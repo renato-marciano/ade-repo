@@ -1,9 +1,9 @@
-name: VM-Renato
-    version: 1.0.0
-    summary: Azure Web App Environment
-    description: Deploys a vm
-    runner: ARM
-    templatePath: azuredeploy.json
+name: CatalogItem
+version: 1.0.0
+summary: Azure Web App Environment
+description: Deploys a vm
+runner: ARM
+templatePath: azuredeploy.json
 parameters:
 - id: "adminUsername"
   name: "adminUsername"
