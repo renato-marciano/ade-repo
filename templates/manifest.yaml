@@ -1,6 +1,19 @@
-name: WebApp
+name: VM-Renato
     version: 1.0.0
     summary: Azure Web App Environment
     description: Deploys a vm
     runner: ARM
     templatePath: azuredeploy.json
+parameters:
+- id: "adminUsername"
+  name: "adminUsername"
+  description: "User name for VM"
+  default: ""
+  type: "string"
+  required: true
+- id: "adminPassword"
+  name: "adminPassword"
+  description: "Pass for VM. At least 12 char"
+  default: ""
+  type: "string"
+  required: true
